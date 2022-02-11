@@ -41,7 +41,7 @@ Also `/dev/nvme1np1` as an example. Type in command
 sudo fdisk -l
 ```
 
-Output:
+Output Example:
 
 ```
 Disk /dev/nvme1n1: 465.76 GiB, 500107862016 bytes, 976773168 sectors
