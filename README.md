@@ -29,7 +29,7 @@ This step can be used once any **"Linux Distro"** is installed.
    (a). GParted
    (b). KDE Partition Manager
    
-   **Non-GUI Support (Terminal)
+   **Non-GUI Support (Terminal)**
    
    (a). fdisk
    
