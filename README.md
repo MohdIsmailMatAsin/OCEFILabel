@@ -33,7 +33,7 @@ We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labele
 
 ###### Non-GUI Support (Terminal Based):
 
-- [fdisk](https://github.com/FDOS/fdisk))
+- [fdisk](https://github.com/FDOS/fdisk)
 
 Also `/dev/nvme1np1` as an example. Type in command:
 
