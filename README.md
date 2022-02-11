@@ -1,4 +1,4 @@
-# OpenCore: Easy Linux EFI Labeling Guide
+# OpenCore: Linux EFI Labeling Guide (Multiboot)
 
 This step can be used once any **"Linux Distro"** is installed.
 
