@@ -22,11 +22,23 @@ This step can be used once any **"Linux Distro"** is installed.
 
 4. Boot to installed Linux Distro using any possible key manually without OpenCore. Example, F11 for MSI.
 
-5. Find Linux EFI Partition path using any tools possible. GParted (GUI Support), KDE Partition Manager (GUI Support) or fdisk (No GUI Support) is recommended. Other tools such as "fdisk" also We choose /dev/nvme1np1 as example. Sometime, Linux EFI Partition is labeled as "NO_NAME" or "EFI" which is unknown to OpenCore. Below is an success example of Linux EFI Partition labeled as "Arch". The patrition must ne in Fat32.
+5. Find Linux EFI Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
+   
+   **GUI Support**
+   
+   (a). GParted
+   (b). KDE Partition Manager
+   
+   **Non-GUI Support (Terminal)
+   
+   (a). fdisk
+   
+   
+We choose /dev/nvme1np1 as an example. Normally, Linux EFI Partition is labeled as "NO_NAME" or "NO NAME" which is unknown to OpenCore. To fix this issue, **"fatlabel** command will be used. 
 
 **KDE Partition Manager (GUI Support):**
 
-![Screenshot_20220211_232624](https://user-images.githubusercontent.com/72515939/153619493-c30aa29b-4acf-4994-ae44-1a96400ebb80.png)
+![153619493-c30aa29b-4acf-4994-ae44-1a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
 **fdisk (No GUI Support):**
 
