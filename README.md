@@ -1,10 +1,10 @@
 # OpenCore: Linux EFI Labeling Guide (Multiboot)
 
-### This step can be used once any **"Linux Distro"** is installed.
+### This step can be used once any **"Linux Distro"** is installed
 
-###### **(Warning: Linux EFI Partition will be "Renamed)**
+###### **(Warning: Linux EFI Partition will be "Renamed)**
 
-### Step
+### Step
 
 1. Boot to macOS - Edit your `config.plist`
   
@@ -20,7 +20,7 @@
 5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
   
 
-###### GUI Support
+###### GUI Support
 
 - [Gparted](https://gparted.org)
   
