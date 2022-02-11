@@ -1,48 +1,41 @@
 # OpenCore: Linux EFI Labeling Guide (Multiboot)
 
-This step can be used once any **"Linux Distro"** is installed.
+### This step can be used once any **"Linux Distro"** is installed.
 
-**Warning: Linux EFI Partition will be "Renamed"**
+###### **(Warning: Linux EFI Partition will be "Renamed)**
 
-1. Boot to macOS - Edit your config.plist
+### Step
 
+1. Boot to macOS - Edit your `config.plist`
+  
 2. Find - Misc/Security/ScanPolicy
+  
+3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing
+  
 
-3. Change - ScanPolicy value to 2690819
-   
-   or
-   
-   Enable OC_SCAN_ALLOW_FS_ESP
-   
-   Interger Value = 1024
-   
-   Hex Value=0x400
-   
-  <img width="826" alt="Linux EFI Rename" src="https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png">
+![Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-4. Boot to installed Linux Distro using any possible key manually without OpenCore. Example, F11 for MSI.
+4. Boot to installed Linux Distro using any possible key manually without OpenCore. Example, `F11` for `MSI`.
+  
+5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
+  
 
-5. Find Linux EFI Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
-   
-   **GUI Support**
-   
-   (a). GParted
-   (b). KDE Partition Manager
-   
-   **Non-GUI Support (Terminal)**
-   
-   (a). fdisk
-   
-   
-We choose /dev/nvme1np1 as an example. Normally, Linux EFI Partition is labeled as "NO_NAME" or "NO NAME" which is unknown to OpenCore. To fix this issue, **"fatlabel** command will be used. 
+###### GUI Support
 
-**KDE Partition Manager (GUI Support):**
+- [Gparted](https://gparted.org)
+  
+- [KDE Partition Manager](https://github.com/KDE/partitionmanager)
+  
 
-![153619493-c30aa29b-4acf-4994-ae44-1a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
+We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labeled as `NO_NAME` or `NO NAME` which is unknown to OpenCore.
 
-**fdisk (No GUI Support):**
+![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
-Command:
+###### Non-GUI Support (Terminal Based)
+
+- [fdisk]([GitHub - FDOS/fdisk: Fixed disk tool - create partitions.](https://github.com/FDOS/fdisk))
+
+Also `/dev/nvme1np1` as an example. Type in command
 
 ```
 sudo fdisk -l
@@ -114,17 +107,16 @@ Device     Boot Start       End   Sectors  Size Id Type
 /dev/sdc1        2048 312496127 312494080  149G af HFS / HFS+
 ```
 
-
 Code Sample
 
 ```
 fatlabel /dev/device NEW_LABEL
 ```
 
-6. Linux EFI Rename. Type in Linux Terminal, 
+6. As example, use **`fatlabel`** command to label `NO_NAME` or `NO NAME` to `Arch`.
 
 ```
 sudo fatlabel /dev/nvme1np1 Arch
 ```
 
-7. Reboot and boot back to OpenCore. Linux Partition "Arch" now visible to choose.
+7. Reboot and boot back to OpenCore. `Arch` Partition now visible.
