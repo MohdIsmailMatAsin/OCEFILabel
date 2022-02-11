@@ -28,7 +28,7 @@ This step can be used once any **"Linux Distro"** is installed.
 
 ![Screenshot_20220211_232624](https://user-images.githubusercontent.com/72515939/153619493-c30aa29b-4acf-4994-ae44-1a96400ebb80.png)
 
-**fdisk (No GUI Support)"
+**fdisk (No GUI Support):**
 
 Command:
 
