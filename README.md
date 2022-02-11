@@ -20,7 +20,7 @@
 5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
   
 
-###### GUI Support
+###### GUI Support:
 
 - [Gparted](https://gparted.org)
   
@@ -31,11 +31,11 @@ We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labele
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
-###### Non-GUI Support (Terminal Based)
+###### Non-GUI Support (Terminal Based):
 
 - [fdisk](https://github.com/FDOS/fdisk))
 
-Also `/dev/nvme1np1` as an example. Type in command
+Also `/dev/nvme1np1` as an example. Type in command:
 
 ```
 sudo fdisk -l
