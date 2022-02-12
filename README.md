@@ -119,4 +119,4 @@ fatlabel /dev/device NEW_LABEL
 sudo fatlabel /dev/nvme1np1 Arch
 ```
 
-7. Reboot and boot back to OpenCore. `Arch` Partition now visible.
+7. Reboot and boot back to OpenCore. `Arch` EFI Partition now visible.
