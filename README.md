@@ -113,7 +113,7 @@ Code Sample
 fatlabel /dev/device NEW_LABEL
 ```
 
-6. Add `sudo` (superuser do) to get root access. Use **`fatlabel`** command to label `NO_NAME` or `NO NAME` EFI Partition. In this case, we will choose `Arch` as new label. Example are as follows:
+6. Type in `sudo` (superuser do) to get root access. Use **`fatlabel`** command to label `NO_NAME` or `NO NAME` EFI Partition. In this case, we will choose `Arch` as new label. Example are as follows:
 
 ```
 sudo fatlabel /dev/nvme1np1 Arch
