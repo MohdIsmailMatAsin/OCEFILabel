@@ -10,12 +10,12 @@
   
 2. Find - Misc/Security/ScanPolicy
   
-3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing
+3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing. Save the plist and Reboot.
   
 
 ![Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-4. Boot to installed Linux Distro using any possible key manually without OpenCore. Example, `F11` for `MSI`.
+4. Boot to any installed Linux Distro using possible key manually without OpenCore. Example, `F11` for `MSI`.
   
 5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
   
