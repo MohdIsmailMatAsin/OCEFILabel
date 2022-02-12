@@ -113,7 +113,7 @@ Code Sample
 fatlabel /dev/device NEW_LABEL
 ```
 
-6. As example, use **`fatlabel`** command to label `NO_NAME` or `NO NAME` to `Arch`.
+6. Use **`fatlabel`** command to label `NO_NAME` or `NO NAME` EFI Partition. In this case, we will choose `Arch` as new label. Example:
 
 ```
 sudo fatlabel /dev/nvme1np1 Arch
