@@ -6,7 +6,7 @@
 
 ###### **Warning:** 
 
-###### Linux EFI Partition will be RENAMED!. Use this method with pre-caution. [OpenLinuxBoot.efi](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#method-a-openlinuxboot) is not required.
+###### Linux EFI Partition will be RENAMED!. Use this method with pre-caution. [OpenLinuxBoot.efi](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#method-a-openlinuxboot) is not required. Manual config.plist editing is encourage.
 
 ------
 
