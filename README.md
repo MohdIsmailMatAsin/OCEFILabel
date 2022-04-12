@@ -1,33 +1,38 @@
 # OpenCore: Linux EFI Labeling Guide (Multiboot)
 
+------
+
 ### This method recommends any **"Linux Distro"** is already installed
 
-###### **(Warning: Linux EFI Partition will be "Renamed)**
+###### **Warning:** 
+
+###### Linux EFI Partition will be Renamed. Use this method with pre-caution. OpenLinuxBoot.efi is not required.
+
+------
 
 ### Step
 
 1. Boot to macOS - Edit your `config.plist`
-  
+
 2. Find - Misc/Security/ScanPolicy
-  
-3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing. Save the plist and Reboot.
-  
+
+3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing (Not Recommend). Save the plist and Reboot.
+
 
 ![Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
 4. Boot to any installed Linux Distro using possible key manually without OpenCore. Example, `F11` for `MSI`.
-  
+
 5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
-  
+
 
 ###### GUI Support:
 
 - [Gparted](https://gparted.org)
-  
-- [KDE Partition Manager](https://github.com/KDE/partitionmanager)
-  
 
-We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labeled as `NO_NAME` or `NO NAME` which is unknown to OpenCore.
+- [KDE Partition Manager](https://github.com/KDE/partitionmanager)
+
+We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labeled as `NO NAME` which is unknown to OpenCore.
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
@@ -35,15 +40,15 @@ We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labele
 
 - [fdisk](https://github.com/FDOS/fdisk)
 
-Also `/dev/nvme1np1` as an example. Type in command:
+In this situation, `/dev/nvme1np1` is an example. Type in command:
 
-```
+```zsh
 sudo fdisk -l
 ```
 
 Output Example:
 
-```
+```zsh
 Disk /dev/nvme1n1: 465.76 GiB, 500107862016 bytes, 976773168 sectors
 Disk model: KINGSTON SA2000M8500G                   
 Units: sectors of 1 * 512 = 512 bytes
@@ -109,14 +114,14 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 Code Sample
 
-```
+```zsh
 fatlabel /dev/device NEW_LABEL
 ```
 
 6. Type in `sudo` (superuser do) to get root access. Use **`fatlabel`** command to label `NO_NAME` or `NO NAME` EFI Partition. In this case, we will choose `Arch` as new label. Example are as follows:
 
-```
+```zsh
 sudo fatlabel /dev/nvme1np1 Arch
 ```
 
-7. Press Enter/Return. Reboot and boot back to OpenCore. `Arch` EFI Partition now visible.
+7. Press `Enter/Return`. `Reboot` and boot back to `OpenCore`. `Arch` EFI Partition now visible.
