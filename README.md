@@ -133,11 +133,11 @@ sudo fatlabel /dev/nvme1np1 Arch
 
 3. Select any Linux EFI, right click and `Select Volume Name` and rename Normal Label (NO NAME) to any remarkable name you choose. In This case, we will choose `Arch`.
 
-**Before**
+**<p align="center">Before</p>**
 
 <p align="center"><img width="275" alt="Screenshot 2022-04-12 231022" src="https://user-images.githubusercontent.com/72515939/162994786-b12b599f-0d68-42bb-9c90-2766687c7eb1.png"></p>
 
-**After**
+**<p align="center">After</p>**
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
