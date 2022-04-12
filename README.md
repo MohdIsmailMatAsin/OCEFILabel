@@ -13,20 +13,17 @@
 ### Step
 
 1. Boot to macOS - Edit your `config.plist`
-
 2. Find - Misc/Security/ScanPolicy
-
 3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing (Not Recommend). Save the plist and Reboot.
 
 
-![Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
+![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
 4. Boot to any installed Linux Distro using possible key manually without OpenCore. Example, `F11` for `MSI`.
-
 5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
 
 
-###### GUI Support:
+###### Method 1: GUI Support (Linux)
 
 - [Gparted](https://gparted.org)
 
@@ -36,7 +33,7 @@ We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labele
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
-###### Non-GUI Support (Terminal Based):
+###### Method 2: Non-GUI Support (Linux)
 
 - [fdisk](https://github.com/FDOS/fdisk)
 
@@ -125,3 +122,19 @@ sudo fatlabel /dev/nvme1np1 Arch
 ```
 
 7. Press `Enter/Return`. `Reboot` and boot back to `OpenCore`. `Arch` EFI Partition now visible.
+
+
+### Method 3: DiskGenius (Windows)
+
+1. Boot to Windows - Edit your `config.plist`
+2. Download [DiskGenius](https://www.diskgenius.com/)
+
+<img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
+
+3. Select any Linux EFI, right click and `Select Volume Name` and rename Normal Label (NO NAME) to any remarkable name you choose. In This case, we will choose `Arch`.
+
+<img width="275" alt="Screenshot 2022-04-12 231022" src="https://user-images.githubusercontent.com/72515939/162994786-b12b599f-0d68-42bb-9c90-2766687c7eb1.png">
+
+4. Close the apps, and Reboot. `Arch` EFI Partition now visible.
+
+
