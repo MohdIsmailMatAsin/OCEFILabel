@@ -10,7 +10,7 @@
 
 ------
 
-# Step
+# Editing Plist
 
 1. Boot to macOS - Edit your `config.plist`
 2. Find - Misc/Security/ScanPolicy
@@ -126,7 +126,7 @@ sudo fatlabel /dev/nvme1np1 Arch
 
 ## Method 3: DiskGenius (Windows)
 
-1. Boot to Windows - Edit your `config.plist`
+1. Boot to Windows - Edit your `config.plist`, follow `Editing Plist`
 2. Download [DiskGenius](https://www.diskgenius.com/)
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
