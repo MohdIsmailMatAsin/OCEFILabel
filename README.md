@@ -14,7 +14,7 @@
 
 1. Boot to macOS - Edit your `config.plist`
 2. Find - Misc/Security/ScanPolicy
-3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [ProperTree](https://github.com/corpnewt/ProperTree) or [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing (Not Recommend). Save the plist and Reboot.
+3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing or [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) for easy `config.plist` editing (Not Recommend). Save the plist and Reboot.
 
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
