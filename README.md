@@ -124,7 +124,7 @@ sudo fatlabel /dev/nvme1np1 Arch
 7. Press `Enter/Return`. `Reboot` and boot back to `OpenCore`. `Arch` EFI Partition now visible.
 
 
-### Method 3: DiskGenius (Windows)
+###### Method 3: DiskGenius (Windows)
 
 1. Boot to Windows - Edit your `config.plist`
 2. Download [DiskGenius](https://www.diskgenius.com/)
