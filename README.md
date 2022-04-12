@@ -22,6 +22,7 @@
 4. Boot to any installed Linux Distro using possible key manually without OpenCore. Example, `F11` for `MSI`.
 5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
 
+------
 
 ## Method 1: Linux - GUI Support
 
@@ -33,6 +34,7 @@ We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labele
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
+------
 
 ## Method 2: Linux Terminal - Non-GUI Support
 
@@ -124,6 +126,7 @@ sudo fatlabel /dev/nvme1np1 Arch
 
 7. Press `Enter/Return`. `Reboot` and boot back to `OpenCore`. `Arch` EFI Partition now visible.
 
+------
 
 ## Method 3: DiskGenius - GUI Support (Windows)
 
