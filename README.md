@@ -145,7 +145,7 @@ sudo fatlabel /dev/nvme1np1 Arch
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
-4. Close the apps, and Reboot. `Arch` EFI Partition now visible.
+4. Close the apps, and Reboot. `Arch` EFI Partition now visible instead of `NO NAME` Linux EFI partition labelling.
 
 ------
 
