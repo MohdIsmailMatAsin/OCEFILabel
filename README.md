@@ -159,5 +159,4 @@ I would like to thanks all folks in Hackintosh Community especially:
 - [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) Boot-loader. KUDOS for them
 - [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) for knowledge sharing
 - [r/Hackintosh](https://www.reddit.com/r/hackintosh/) for an easy undocumented references
-- [mikebeaton](https://github.com/mikebeaton) for an official [OpenCore Multiboot](https://github.com/mikebeaton/OpenCore-Multiboot) guide and [OpenLinuxBoot.efi](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html) implementation
 
