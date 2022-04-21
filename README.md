@@ -153,13 +153,11 @@ sudo fatlabel /dev/nvme1np1 Arch
 
 I would like to thanks all folks in Hackintosh Community especially:
 
+I would like to thanks all folks in Hackintosh Community especially:
+
 - [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) for a great guide
-- [Acidanthera](https://github.com/acidanthera) for a great work. KUDOS for them
-- [CorpNewt](https://github.com/corpnewt) for developing simple USB mapping tools
-- [dhinakg](https://github.com/USBToolBox/tool) for developing easy Windows based USB mapping tools inspired by CorpNewt USBMap
+- [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) Boot-loader. KUDOS for them
 - [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) for knowledge sharing
 - [r/Hackintosh](https://www.reddit.com/r/hackintosh/) for an easy undocumented references
-- [daliansky](https://github.com/daliansky) for publishing his own OpenCore ACPI method (OC-Little) and implementation
-- [5T33Z0](https://github.com/5T33Z0/OC-Little-Translated) for translating daliansky OC-Little
-- [rusty-bits](https://github.com/rusty-bits) for an easy EFI update using windows "Cmd-Prompt", linux and MacOS Terminal
+- [mikebeaton](https://github.com/mikebeaton) for an official [OpenCore Multiboot](https://github.com/mikebeaton/OpenCore-Multiboot) guide and [OpenLinuxBoot.efi](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html) implementation
 
