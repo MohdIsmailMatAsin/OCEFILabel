@@ -6,7 +6,7 @@
 
 ###### **Warning:** 
 
-###### <p align="justify">This is an alternative method. Linux EFI Partition will be RENAMED!. Use this method with pre-caution. [OpenLinuxBoot.efi](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#method-a-openlinuxboot) is not required and manual config.plist editing via [ProperTree](https://github.com/corpnewt/ProperTree) or any `.plist editor` is encourage. I will not responsible `100%` if any issues happen using this method. Do note, please use official method instead if you have no problem with [OpenCore Multiboot](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html) support.</p>
+###### <p align="justify">This is an alternative method. Linux EFI Partition will be RENAMED!. Use this method with pre-caution. [OpenLinuxBoot.efi](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#method-a-openlinuxboot) is not required and manual config.plist editing via [ProperTree](https://github.com/corpnewt/ProperTree) or any `.plist editor` is encourage. I will not responsible `100%` if any issues happen using this method. Do note, please use official method if you have no problem with Multiboot. Refer official [OpenCore Multiboot](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html) support for more info.</p>
 
 ------
 
