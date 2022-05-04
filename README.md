@@ -10,7 +10,7 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ## Method 1: Linux - Using [Gparted](https://gparted.org) or [KDE Partition Manager](https://github.com/KDE/partitionmanager)
 
-📌 This is GUI support guide. At first, **boot** to Linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [GOOGLE](https://www.google.com).
+📌 This is **GUI support** guide. At first, **boot** to Linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [GOOGLE](https://www.google.com).
 
 - ✏️ ASUS = F8
 - ✏️ Gigabyte = F12
@@ -37,7 +37,7 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-📌 This is **No GUI support** method. Same as Method #1, Linux **EFI partition** is labeled as `NO NAME` which is unknown to **OpenCore**.
+📌 This is not **GUI support** method. Same as **Method 1**, Linux **EFI partition** is labeled as `NO NAME` which is unknown to **OpenCore**.
 
 📌 In this situation, `/dev/nvme1np1` is an example. Type in **Terminal**:
 
@@ -121,7 +121,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 📌 Press **Enter/Return**. `Reboot` and **reboot** back to **OpenCore**. **Arch** EFI Partition now **visible**.
 
-------
+</br>
 
 ## Method 3: Using [DiskGenius](https://www.diskgenius.com/) - GUI Support (Windows Only).
 
@@ -149,7 +149,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 📌 Close the apps, and Reboot. `Arch` EFI Partition now visible instead of `NO NAME` Linux EFI partition labelling.
 
-------
+</br>
 
 ## ACKNOWLEGEMENT
 
@@ -160,3 +160,9 @@ Device     Boot Start       End   Sectors  Size Id Type
 - 💠 [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) 😉 an official [Facebook](https://www.facebook.com) community for Hackintosh
 - 💠 [r/Hackintosh](https://www.reddit.com/r/hackintosh/) 😘 my favourite [reddit](https://www.reddit.com) Hackintosh discussion platform
 - 💠 [ic005k](https://github.com/ic005k) 😗 develop [Xplist](https://github.com/ic005k/Xplist)
+
+</br>
+
+## FOLLOW ME
+
+- ❤️ [reddit](https://www.reddit.com) - ⭐ [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
