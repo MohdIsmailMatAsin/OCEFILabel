@@ -27,7 +27,7 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-📌 **Find** Use linux any support built-in partition manager such as GParted or KDE Partition Manager to find Linux **EFI**. As **example**, `/dev/nvme1np1` will be chosen. **Rename** Linux **EFI** partition labelled as **NO NAME** to any name. In this case, **Arch** are choosen as new label.
+📌 Use linux any support built-in partition manager such as **GParted** or **KDE Partition Manager** to find Linux **EFI**. As **example**, `/dev/nvme1np1` will be chosen. **Rename** Linux **EFI** partition labelled as **NO NAME** to any name. In this case, **Arch** are choosen as new label.
 
 📌 **Reboot** PC.
 
