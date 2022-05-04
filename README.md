@@ -1,52 +1,49 @@
 # OpenCore: Linux EFI Labeling Guide (Multiboot)
 
-------
+### **Warning:** 
 
-### This method recommends any **"Linux Distro"** is already installed
+### <p align="justify">
+This is an **alternative** method. Recommends any **"Linux Distro"** is already installed. The **Linux EFI Partition** will be renamed! Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** or any **.plist editor** is encouraged. I will not be 💯 responsible if any issues happen using this method. Do note, please use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** method if you have no issues with Multiboot. Refer to the official **[OpenCore Multiboot](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html)** support for more info.
+</p>
 
-###### **Warning:** 
+</br>
 
-###### <p align="justify">This is an alternative method. The Linux EFI Partition will be renamed! Use this method with precaution. Manual config.plist editing via [ProperTree](https://github.com/corpnewt/ProperTree) or any `.plist editor` is encouraged. I will not be 100% responsible if any issues happen using this method. Do note, please use the official method if you have no issues with Multiboot. Refer to the official [OpenCore Multiboot](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html) support for more info.</p>
+## Method 1: Linux - Using [Gparted](https://gparted.org) or [KDE Partition Manager](https://github.com/KDE/partitionmanager)
 
-------
+📌 This is GUI support guide. At first, **boot** to Linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [GOOGLE](https://www.google.com).
 
-# Editing Plist
+- ✏️ ASUS = F8
+- ✏️ Gigabyte = F12
+- ✏️ MSI = F11      
+- ✏️ Intel = F10
+- ✏️ Asrock = F11
+- ✏️ EVGA = F7
 
-1. Boot to macOS - Edit your `config.plist`
-2. Find - Misc/Security/ScanPolicy
-3. Change - `ScanPolicy` value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. Use [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing or [OCAuxilliarytools](https://github.com/ic005k/OCAuxiliaryTools) (Not Recommend) for easy `config.plist` editing. Save the plist and Reboot.
+📌 **Edit** config.plist by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.
 
+📌 **Find** Misc/Security/ScanPolicy.
+
+📌 **Change** ScanPolicy value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. **Save** the plist and **Reboot**.
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-4. Boot to any installed Linux Distro using possible key manually without OpenCore. Example, `F11` for `MSI`.
-5. Find Linux `EFI` Partition path using any tools possible. There are several applications that are suitable for obtaining storage volume path/name.
+📌 **Find** Use linux any support built-in partition manager such as GParted or KDE Partition Manager to find Linux **EFI**. As **example**, `/dev/nvme1np1` will be chosen. **Rename** Linux **EFI** partition labelled as **NO NAME** to any name. In this case, **Arch** are choosen as new label.
 
-------
-
-## Method 1: Linux - GUI Support
-
-- [Gparted](https://gparted.org)
-
-- [KDE Partition Manager](https://github.com/KDE/partitionmanager)
-
-We choose `/dev/nvme1np1` as an example. Normally, Linux EFI Partition is labeled as `NO NAME` which is unknown to OpenCore.
+📌 **Reboot** PC.
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
-------
+</br>
 
-## Method 2: Linux Terminal - Non-GUI Support
+## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-- [fdisk](https://github.com/FDOS/fdisk)
+📌 This is **No GUI support** method. Same as Method #1, Linux **EFI partition** is labeled as `NO NAME` which is unknown to **OpenCore**.
 
-In this situation, `/dev/nvme1np1` is an example. Type in command:
+📌 In this situation, `/dev/nvme1np1` is an example. Type in **Terminal**:
 
-```zsh
-sudo fdisk -l
-```
+`sudo fdisk -l`
 
-Output Example:
+📌 Output Example:
 
 ```zsh
 Disk /dev/nvme1n1: 465.76 GiB, 500107862016 bytes, 976773168 sectors
@@ -112,30 +109,35 @@ Device     Boot Start       End   Sectors  Size Id Type
 /dev/sdc1        2048 312496127 312494080  149G af HFS / HFS+
 ```
 
-Code Sample
+📌 Type in **sudo** (superuser do) to get **root access**. Use `fatlabel` command to label **NO_NAME** / **NO NAME** EFI partition. In this case, **Arch** are choosen as new label. **Example** are as follows:</p>
 
-```zsh
-fatlabel /dev/device NEW_LABEL
-```
+💻 **Fatlabel basic command**
 
-6. Type in `sudo` (superuser do) to get root access. Use **`fatlabel`** command to label `NO_NAME` or `NO NAME` EFI Partition. In this case, we will choose `Arch` as new label. Example are as follows:
+`fatlabel /dev/device NEW_LABEL`
 
-```zsh
-sudo fatlabel /dev/nvme1np1 Arch
-```
+💻 **Use command**
 
-7. Press `Enter/Return`. `Reboot` and boot back to `OpenCore`. `Arch` EFI Partition now visible.
+`sudo fatlabel /dev/nvme1np1 Arch`
+
+📌 Press **Enter/Return**. `Reboot` and **reboot** back to **OpenCore**. **Arch** EFI Partition now **visible**.
 
 ------
 
-## Method 3: DiskGenius - GUI Support (Windows)
+## Method 3: Using [DiskGenius](https://www.diskgenius.com/) - GUI Support (Windows Only).
 
-1. Boot to Windows - Edit your `config.plist`, follow `Editing Plist`
-2. Download [DiskGenius](https://www.diskgenius.com/)
+📌 **Boot** to Windows
+
+📌 **Download** [DiskGenius](https://www.diskgenius.com/).
+
+📌 **Edit** config.plist by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.
+
+📌 **Change** ScanPolicy value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. **Save** the plist and **Reboot**.
+
+📌 **Save** the plist and **Reboot**.
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
 
-3. Select any Linux EFI, right click and `Select Volume Name` and rename Normal Label (NO NAME) to any remarkable name you choose. In This case, we will choose `Arch`.
+📌 Select any **Linux EFI**, right click and **Select Volume Name** and rename **Normal Label (NO NAME)** to **any** remarkable name you choose. In this case, **Arch** are choosen as new label.
 
 **<p align="center">Before</p>**
 
@@ -145,18 +147,16 @@ sudo fatlabel /dev/nvme1np1 Arch
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
-4. Close the apps, and Reboot. `Arch` EFI Partition now visible instead of `NO NAME` Linux EFI partition labelling.
+📌 Close the apps, and Reboot. `Arch` EFI Partition now visible instead of `NO NAME` Linux EFI partition labelling.
 
 ------
 
-# Acknowledgements
+## ACKNOWLEGEMENT
 
-I would like to thanks all folks in Hackintosh Community especially:
+📌 I would like to thanks all folks in Hackintosh Community especially:
 
-I would like to thanks all folks in Hackintosh Community especially:
-
-- [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) for a great guide
-- [Acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) Boot-loader. KUDOS for them
-- [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) for knowledge sharing
-- [r/Hackintosh](https://www.reddit.com/r/hackintosh/) for an easy undocumented references
-
+- 💠 [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) 😍 a great guide
+- 💠 [corpNewt](https://github.com/corpnewt) 😁 developing [ProperTree](https://github.com/corpnewt/ProperTree) 
+- 💠 [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) 😉 an official [Facebook](https://www.facebook.com) community for Hackintosh
+- 💠 [r/Hackintosh](https://www.reddit.com/r/hackintosh/) 😘 my favourite [reddit](https://www.reddit.com) Hackintosh discussion platform
+- 💠 [ic005k](https://github.com/ic005k) 😗 develop [Xiasl](https://github.com/ic005k/Xiasl), [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools), and [Xplist](https://github.com/ic005k/Xplist)
