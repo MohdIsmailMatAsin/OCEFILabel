@@ -125,7 +125,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 ## Method 3: Using [DiskGenius](https://www.diskgenius.com/) - GUI Support (Windows Only).
 
-📌 **Boot** to Windows
+📌 This is **GUI support** guide. At first, **boot** to Windows.
 
 📌 **Download** [DiskGenius](https://www.diskgenius.com/).
 
