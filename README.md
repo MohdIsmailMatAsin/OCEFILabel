@@ -10,7 +10,7 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ## Method 1: Linux - Using [Gparted](https://gparted.org) or [KDE Partition Manager](https://github.com/KDE/partitionmanager)
 
-📌 This is **GUI support** guide. At first, **boot** to Linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [GOOGLE](https://www.google.com).
+📌 This is **GUI support** guide. At first, **boot** to linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [GOOGLE](https://www.google.com).
 
 - ✏️ ASUS = F8
 - ✏️ Gigabyte = F12
@@ -27,7 +27,7 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-📌 Use linux any support built-in partition manager such as **GParted** or **KDE Partition Manager** to find Linux **EFI**. As **example**, `/dev/nvme1np1` will be chosen. **Rename** Linux **EFI** partition labelled as **NO NAME** to any name. In this case, **Arch** are choosen as new label.
+📌 Use any linux built-in partition manager such as **GParted** or **KDE Partition Manager** to find linux **EFI**. As **example**, `/dev/nvme1np1` will be chosen. **Rename** linux **EFI** partition labelled as **NO NAME** to any name. In this case, **Arch** are choosen as new label.
 
 📌 **Reboot** PC.
 
@@ -37,7 +37,7 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-📌 This is not **GUI support** method. Same as **Method 1**, Linux **EFI partition** is labeled as `NO NAME` which is unknown to **OpenCore**.
+📌 This is not **GUI support** method. Same as **Method 1**, linux **EFI partition** is labeled as `NO NAME` which is unknown to **OpenCore**.
 
 📌 In this situation, `/dev/nvme1np1` is an example. Type in **Terminal**:
 
@@ -137,7 +137,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
 
-📌 Select any **Linux EFI**, right click and **Select Volume Name** and rename **Normal Label (NO NAME)** to **any** remarkable name you choose. In this case, **Arch** are choosen as new label.
+📌 Select any linux **EFI**, right click and **Select Volume Name** and rename **Normal Label (NO NAME)** to **any** remarkable name you choose. In this case, **Arch** are choosen as new label.
 
 **<p align="center">Before</p>**
 
@@ -147,7 +147,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
-📌 Close the apps, and Reboot. `Arch` EFI Partition now visible instead of `NO NAME` Linux EFI partition labelling.
+📌 Close the apps, and Reboot. `Arch` EFI Partition now visible instead of `NO NAME` linux EFI partition labelling.
 
 </br>
 
