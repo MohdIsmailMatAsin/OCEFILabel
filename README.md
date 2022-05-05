@@ -111,7 +111,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 **Step 1**<div align="justify">Boot to **Windows**.</div>
 
-**Step 2**<div align="justify">Download[DiskGenius](https://www.diskgenius.com/).</div>
+**Step 2**<div align="justify">Download [DiskGenius](https://www.diskgenius.com/).</div>
 
 **Step 3**<div align="justify">Edit "config.plist" by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.</div>
 
