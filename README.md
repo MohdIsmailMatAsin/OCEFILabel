@@ -17,13 +17,13 @@
 
 **Step 2**<div align="justify">Edit config.plist by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.</div>
 
-**Step 3**<div align="justify">Find "Misc > Security > ScanPolicy" on config.plis.</div>
+**Step 3**<div align="justify">Find **Misc > Security > ScanPolicy** on config.plist.</div>
 
-**Step 4**<div align="justify">Change "ScanPolicy" value to "2690819" or "Enable OC_SCAN_ALLOW_FS_ESP". Save config.plist and reboot.</div>
+**Step 4**<div align="justify">Change **ScanPolicy** value to **2690819** or **Enable OC_SCAN_ALLOW_FS_ESP**. Save config.plist and reboot.</div>
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-**Step 5**<div align="justify">Use any linux built-in partition manager such as **GParted** or **KDE Partition Manager** to find linux EFI. As an example, "/dev/nvme1np1" will be chosen. Rename linux EFI partition which labelled as `NO NAME` to any desired name ie: Arch.</div>
+**Step 5**<div align="justify">Use any linux built-in partition manager such as **GParted** or **KDE Partition Manager** to find linux EFI. As an example, "/dev/nvme1np1" will be chosen. Rename linux EFI partition which labelled as **NO NAME** to any desired name ie: Arch.</div>
 
 **Step 6**<div align="justify">Reboot PC.</div>
 
@@ -33,7 +33,7 @@
 
 ## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-**Step 1**<div align="justify">Same as Method 1, use `sudo fdisk -l` command on terminal to find EFI partition labeled as "NO NAME". As example, "/dev/nvme1np1".</div>
+**Step 1**<div align="justify">Same as **Method 1**, use `sudo fdisk -l` command on terminal to find EFI partition labeled as **NO NAME**. As example, **/dev/nvme1np1**.</div>
 
 Output:
 
@@ -101,15 +101,15 @@ Device     Boot Start       End   Sectors  Size Id Type
 /dev/sdc1        2048 312496127 312494080  149G af HFS / HFS+
 ```
 
-**Step 2**<div align="justify">Type sudo "superuser do" to get root access. Use "fatlabel" command to label "NO NAME" EFI partition. Ie: `sudo fatlabel /dev/nvme1np1 Arch`.</p>
+**Step 2**<div align="justify">Type **sudo** (superuser do) to get root access. Use **fatlabel** command to label **NO NAME** EFI partition. Ie: `sudo fatlabel /dev/nvme1np1 Arch`.</p>
 
-**Step 3**<div align="justify">Press Enter/Return. Then, reboot and boot back to OpenCore. "Arch" EFI Partition now visible in OpenCore boot menu.
+**Step 3**<div align="justify">Press Enter/Return. Then, reboot and boot back to OpenCore. **Arch** EFI Partition now visible in OpenCore boot menu.
 
 </br>
 
 ## Method 3: Using [DiskGenius](https://www.diskgenius.com/) - GUI Support (Windows Only).
 
-**Step 1**<div align="justify">Boot to Windows.</div>
+**Step 1**<div align="justify">Boot to **Windows**.</div>
 
 **Step 2**<div align="justify">Download[DiskGenius](https://www.diskgenius.com/).</div>
 
@@ -119,7 +119,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
 
-**Step 5**<div align="justify">Select any linux EFI, right click and "Select Volume Name". Rename "Normal Label" ie: "NO NAME" to any desired name. As an example, Arch.</div>
+**Step 5**<div align="justify">Select any linux EFI, right click and **Select Volume Name**. Rename **Normal Label**. Ie: **NO NAME** to any desired name. As an example, **Arch**.</div>
 
 **<p align="center">Before</p>**
 
@@ -129,7 +129,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
-**Step 6**<div align="justify">Close the application, and reboot. "Arch" EFI partition now visible on OpenCore boot menu.</div>
+**Step 6**<div align="justify">Close the application, and reboot. **Arch** EFI partition now visible on OpenCore boot menu.</div>
 
 </br>
 
