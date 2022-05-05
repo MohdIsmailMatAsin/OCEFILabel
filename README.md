@@ -1,35 +1,31 @@
 # OpenCore: Linux EFI Labeling Guide (Multiboot)
 
-### **Warning:** 
-
-### <p align="justify">
-This is an **alternative** method. Recommends any **"Linux Distro"** is already installed. The **Linux EFI Partition** will be renamed! Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** or any **.plist editor** is encouraged. I will not be 💯 responsible if any issues happen using this method. Do note, please use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** method if you have no issues with Multiboot. Refer to the official **[OpenCore Multiboot](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html)** support for more info.
-</p>
+**Warning:**<p align="justify">This is an **alternative** method. Recommends any **"Linux Distro"** is already installed. The **Linux EFI Partition** will be renamed! Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** or any **.plist editor** is encouraged. I will not be 💯 responsible if any issues happen using this method. Do note, please use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** method if you have no issues with Multiboot. Refer to the official **[OpenCore Multiboot](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html)** support for more info.</p>
 
 </br>
 
 ## Method 1: Linux - Using [Gparted](https://gparted.org) or [KDE Partition Manager](https://github.com/KDE/partitionmanager)
 
-📌 This is **GUI support** guide. At first, **boot** to linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [GOOGLE](https://www.google.com).
+**Step 1**<div align="justify">At first, **boot** to linux using possible BIOS key without boot to OpenCore. Use list below as references. If not listed, please 👓 [Google](https://www.google.com).</div>
 
-- ✏️ ASUS = F8
-- ✏️ Gigabyte = F12
-- ✏️ MSI = F11      
-- ✏️ Intel = F10
-- ✏️ Asrock = F11
-- ✏️ EVGA = F7
+- ASUS = F8
+- Gigabyte = F12
+- MSI = F11      
+- Intel = F10
+- Asrock = F11
+- EVGA = F7
 
-📌 **Edit** config.plist by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.
+**Step 2**<div align="justify">Edit config.plist by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.</div>
 
-📌 **Find** Misc/Security/ScanPolicy.
+**Step 3**<div align="justify">Find "Misc > Security > ScanPolicy" on config.plis.</div>
 
-📌 **Change** ScanPolicy value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. **Save** the plist and **Reboot**.
+**Step 4**<div align="justify">Change "ScanPolicy" value to "2690819" or "Enable OC_SCAN_ALLOW_FS_ESP". Save config.plist and reboot.</div>
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-📌 Use any linux built-in partition manager such as **GParted** or **KDE Partition Manager** to find linux **EFI**. As **example**, `/dev/nvme1np1` will be chosen. **Rename** linux **EFI** partition labelled as **NO NAME** to any name. In this case, **Arch** are choosen as new label.
+**Step 5**<div align="justify">Use any linux built-in partition manager such as **GParted** or **KDE Partition Manager** to find linux EFI. As an example, "/dev/nvme1np1" will be chosen. Rename linux EFI partition which labelled as `NO NAME` to any desired name ie: Arch.</div>
 
-📌 **Reboot** PC.
+**Step 6**<div align="justify">Reboot PC.</div>
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
@@ -37,13 +33,9 @@ This is an **alternative** method. Recommends any **"Linux Distro"** is already 
 
 ## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-📌 This is not **GUI support** method. Same as **Method 1**, linux **EFI partition** is labeled as `NO NAME` which is unknown to **OpenCore**.
+**Step 1**<div align="justify">Same as Method 1, use `sudo fdisk -l` command on terminal to find EFI partition labeled as "NO NAME". As example, "/dev/nvme1np1".</div>
 
-📌 In this situation, `/dev/nvme1np1` is an example. Type in **Terminal**:
-
-`sudo fdisk -l`
-
-📌 Output Example:
+Output:
 
 ```zsh
 Disk /dev/nvme1n1: 465.76 GiB, 500107862016 bytes, 976773168 sectors
@@ -109,35 +101,25 @@ Device     Boot Start       End   Sectors  Size Id Type
 /dev/sdc1        2048 312496127 312494080  149G af HFS / HFS+
 ```
 
-📌 Type in **sudo** (superuser do) to get **root access**. Use `fatlabel` command to label **NO_NAME** / **NO NAME** EFI partition. In this case, **Arch** are choosen as new label. **Example** are as follows:</p>
+**Step 2**<div align="justify">Type sudo "superuser do" to get root access. Use "fatlabel" command to label "NO NAME" EFI partition. Ie: `sudo fatlabel /dev/nvme1np1 Arch`.</p>
 
-💻 **Fatlabel basic command**
-
-`fatlabel /dev/device NEW_LABEL`
-
-💻 **Use command**
-
-`sudo fatlabel /dev/nvme1np1 Arch`
-
-📌 Press **Enter/Return**. `Reboot` and **reboot** back to **OpenCore**. **Arch** EFI Partition now **visible**.
+**Step 3**<div align="justify">Press Enter/Return. Then, reboot and boot back to OpenCore. "Arch" EFI Partition now visible in OpenCore boot menu.
 
 </br>
 
 ## Method 3: Using [DiskGenius](https://www.diskgenius.com/) - GUI Support (Windows Only).
 
-📌 This is **GUI support** guide. At first, **boot** to Windows.
+**Step 1**<div align="justify">Boot to Windows.</div>
 
-📌 **Download** [DiskGenius](https://www.diskgenius.com/).
+**Step 2**<div align="justify">Download[DiskGenius](https://www.diskgenius.com/).</div>
 
-📌 **Edit** config.plist by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.
+**Step 3**<div align="justify">Edit "config.plist" by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.</div>
 
-📌 **Change** ScanPolicy value to `2690819` or `Enable OC_SCAN_ALLOW_FS_ESP`. **Save** the plist and **Reboot**.
-
-📌 **Save** the plist and **Reboot**.
+**Step 4**<div align="justify">Change "ScanPolicy" value to "2690819" or "Enable OC_SCAN_ALLOW_FS_ESP". Save config.plist and reboot.</div>
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
 
-📌 Select any linux **EFI**, right click and **Select Volume Name** and rename **Normal Label (NO NAME)** to **any** remarkable name you choose. In this case, **Arch** are choosen as new label.
+**Step 5**<div align="justify">Select any linux EFI, right click and "Select Volume Name". Rename "Normal Label" ie: "NO NAME" to any desired name. As an example, Arch.</div>
 
 **<p align="center">Before</p>**
 
@@ -147,7 +129,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
-📌 Close the apps, and Reboot. **Arch** EFI partition now visible instead of **NO NAME** using [OpenCore](https://github.com/acidanthera/OpenCorePkg).
+**Step 6**<div align="justify">Close the application, and reboot. "Arch" EFI partition now visible on OpenCore boot menu.</div>
 
 </br>
 
@@ -165,4 +147,4 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 ## FOLLOW ME
 
-- ❤️ [reddit](https://www.reddit.com) - ⭐ [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
+- ❤️ [reddit](https://www.reddit.com) ⭐ [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
