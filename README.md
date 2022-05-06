@@ -119,9 +119,19 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
 
-**Step 5**<div align="justify">Launch DiskGenius, and select any linux EFI, right click and **Select Volume Name**. Rename **Normal Label**. Ie: **NO NAME** to any desired name. As an example, **Arch**.</div>
+<br>
+
+**4.1 Before**
+
+<p align="center"><img width="275" alt="Screenshot 2022-04-12 231022" src="https://user-images.githubusercontent.com/72515939/162994786-b12b599f-0d68-42bb-9c90-2766687c7eb1.png"></p>
+
+**4.2 After**
+
+<p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
 </br>
+
+**Step 5**<div align="justify">Launch DiskGenius, and select any linux EFI, right click and **Select Volume Name**. Rename **Normal Label**. Ie: **NO NAME** to any desired name. As an example, **Arch**.</div>
 
 **5.1 Copy to Desktop**
 
@@ -136,14 +146,6 @@ Device     Boot Start       End   Sectors  Size Id Type
 ![AUX103](https://user-images.githubusercontent.com/72515939/167094354-c37ed351-2ff0-4f90-928d-44e9d6a1fb56.gif)
 
 </br>
-
-**Before**
-
-<p align="center"><img width="275" alt="Screenshot 2022-04-12 231022" src="https://user-images.githubusercontent.com/72515939/162994786-b12b599f-0d68-42bb-9c90-2766687c7eb1.png"></p>
-
-**After**
-
-<p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
 **Step 6**<div align="justify">Close the application, and reboot. **Arch** EFI partition now visible on OpenCore boot menu.</div>
 
