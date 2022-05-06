@@ -113,7 +113,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 **Step 2**<div align="justify">Download [DiskGenius](https://www.diskgenius.com/).</div>
 
-**Step 3**<div align="justify">Edit "config.plist" by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.</div>
+**Step 3**<div align="justify">Edit "config.plist" in by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree) for manual editing.</div>
 
 **Step 4**<div align="justify">Change "ScanPolicy" value to "2690819" or "Enable OC_SCAN_ALLOW_FS_ESP". Save config.plist and reboot.</div>
 
