@@ -133,6 +133,8 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 **Step 5**<div align="justify">Launch DiskGenius, and select any linux EFI, right click and **Select Volume Name**. Rename **Normal Label**. Ie: **NO NAME** to any desired name. As an example, **Arch**.</div>
 
+</br>
+
 **5.1 Copy to Desktop**
 
 ![AUX10](https://user-images.githubusercontent.com/72515939/167094342-1f1d8391-1a11-4120-95af-040e481eb297.gif)
