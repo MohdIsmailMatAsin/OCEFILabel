@@ -121,11 +121,23 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 **Step 5**<div align="justify">Launch DiskGenius, and select any linux EFI, right click and **Select Volume Name**. Rename **Normal Label**. Ie: **NO NAME** to any desired name. As an example, **Arch**.</div>
 
-**<p align="center">Before</p>**
+**5.1 Copy to Desktop**
+
+![AUX10](https://user-images.githubusercontent.com/72515939/167094342-1f1d8391-1a11-4120-95af-040e481eb297.gif)
+
+**5.2 Delete current EFI and edit the copy on Desktop**
+
+![AUX102](https://user-images.githubusercontent.com/72515939/167094347-c4edf9c6-1e1b-4e1f-9132-c200e8675adf.gif)
+
+**5.3 Move edited copy from Desktop to EFI**
+
+![AUX103](https://user-images.githubusercontent.com/72515939/167094354-c37ed351-2ff0-4f90-928d-44e9d6a1fb56.gif)
+
+**Before**
 
 <p align="center"><img width="275" alt="Screenshot 2022-04-12 231022" src="https://user-images.githubusercontent.com/72515939/162994786-b12b599f-0d68-42bb-9c90-2766687c7eb1.png"></p>
 
-**<p align="center">After</p>**
+**After**
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
