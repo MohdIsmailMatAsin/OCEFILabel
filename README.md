@@ -125,11 +125,11 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 ![AUX10](https://user-images.githubusercontent.com/72515939/167094342-1f1d8391-1a11-4120-95af-040e481eb297.gif)
 
-**5.2 Delete current EFI and edit the copy on Desktop**
+**5.2 Delete current EFI from partition and edit the copy on Desktop using [ProperTree](https://github.com/corpnewt/ProperTree)  or [Xplist](https://github.com/ic005k/Xplist)**
 
 ![AUX102](https://user-images.githubusercontent.com/72515939/167094347-c4edf9c6-1e1b-4e1f-9132-c200e8675adf.gif)
 
-**5.3 Move edited copy from Desktop to EFI**
+**5.3 Move/Drag edited copy from Desktop to EFI partition**
 
 ![AUX103](https://user-images.githubusercontent.com/72515939/167094354-c37ed351-2ff0-4f90-928d-44e9d6a1fb56.gif)
 
