@@ -119,7 +119,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <img width="912" alt="Screenshot 2022-04-12 230853" src="https://user-images.githubusercontent.com/72515939/162994338-39864d07-9f19-4b74-9d27-a0bf8a8cfa18.png">
 
-<br>
+</br>
 
 **4.1 Before**
 
