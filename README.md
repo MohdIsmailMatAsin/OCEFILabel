@@ -1,4 +1,4 @@
-# OpenCore: Linux EFI Labeling Guide (Multiboot)
+# OpenCore: Linux EFI Labeling Alternative Guide without [OpenLinuxBoot](https://github.com/dortania/OpenCore-Multiboot/blob/master/oc/linux.md)
 
 **Warning:**<div align="justify">This is an **alternative** method which recommends any **Linux Distro** is already installed. Exact **EFI** partition will be renamed. Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** is recommended. This guide are not responsible if any issues occur. Storage is case sensitive, use the [official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/) support method if you are not confident trough this process.</div>
 
