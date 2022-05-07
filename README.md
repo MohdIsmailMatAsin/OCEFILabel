@@ -150,7 +150,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 ## ACKNOWLEGEMENT
 
-> I would like to **thanks** all folks in Hackintosh Community especially:
+I would like to **thanks** all folks in Hackintosh Community especially:
 
 - [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) 😍 a great guide
 - [corpNewt](https://github.com/corpnewt) 😁 developing [ProperTree](https://github.com/corpnewt/ProperTree) 
