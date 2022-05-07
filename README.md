@@ -125,7 +125,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 ![AUX102](https://user-images.githubusercontent.com/72515939/167094347-c4edf9c6-1e1b-4e1f-9132-c200e8675adf.gif)
 
 
-**Step 4**<div align="justify">Edit **config.plist**, change the value of **ScanPolicy** to **2690819** by using [Xplist](https://github.com/ic005k/Xplist) or [ProperTree](https://github.com/corpnewt/ProperTree)</div>
+**Step 4**<div align="justify">Edit **config.plist**, change the value of **ScanPolicy** to **2690819** by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**</div>
 
 **Step 5**<div align="justify">After editing, save **config.plist**. **Move/Drag** back edited copy from Desktop to EFI partition</div>
 
