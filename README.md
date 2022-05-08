@@ -129,7 +129,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 **Step 5**<div align="justify">After editing, save **config.plist**. **Move/Drag** back edited copy from Desktop to EFI partition</div>
 
-> 5.1 **Move/Drag** the EFI**
+> 5.1 **Move/Drag** the **EFI**
 
 ![AUX103](https://user-images.githubusercontent.com/72515939/167094354-c37ed351-2ff0-4f90-928d-44e9d6a1fb56.gif)
 
