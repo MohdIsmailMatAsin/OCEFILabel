@@ -16,7 +16,7 @@
 | MSI              | F11          | EVGA             | F7           |
 > > **Remark:**<div align="justify">BIOS key in the table above is not entirely correct. The key is depending on how the manufacturer designs the board. Please pay attention. This is basic knowledge to understand how your motherboard works. It is better to refer to any source, especially your motherboard manufacturer, for a better understanding</div>
 
-**Step 2**<div align="justify">Manually edit config.plist with **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree).</div>
+**Step 2**<div align="justify">Manually edit config.plist with **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**.</div>
 
 **Step 3**<div align="justify">In config.plist, look for **Misc** > **Security** > **ScanPolicy**</div>
 
