@@ -1,7 +1,7 @@
 # Hackintosh: An Alternative Linux EFI Labeling 
 
-> **Warning:**<div align="justify">_This is an alternative method which recommends **Linux Distro** is already installed. Exact **EFI** partition will be renamed. Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** is recommended. This guide are not responsible if any issues occur. Storage is case sensitive, use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** support method if you are not confident trough this process_</div>
-> > **Reminder:**<div align="justify"> _This method don't require and depends on **[OpenLinuxBoot](https://github.com/dortania/OpenCore-Multiboot/blob/master/oc/Linux.md)**. Please read apropriately_</div>
+> _**Warning:**<div align="justify">This is an alternative method which recommends **Linux Distro** is already installed. Exact **EFI** partition will be renamed. Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** is recommended. This guide are not responsible if any issues occur. Storage is case sensitive, use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** support method if you are not confident trough this process_</div>
+> > _**Reminder:**<div align="justify"> This method don't require and depends on **[OpenLinuxBoot](https://github.com/dortania/OpenCore-Multiboot/blob/master/oc/Linux.md)**. Please read apropriately_</div>
 
 </br>
 
@@ -14,7 +14,7 @@
 | ASUS             | F8           | Intel            | F10          |
 | Gigabyte         | F12          | Asrock           | F11          |
 | MSI              | F11          | EVGA             | F7           |
-> > **Remark:**<div align="justify">BIOS key in the table above is not entirely correct. The key is depending on how the manufacturer designs the board. Please pay attention. This is basic knowledge to understand how your motherboard works. It is better to refer to any source, especially your motherboard manufacturer, for a better understanding</div>
+> > _**Remark:**<div align="justify">BIOS key in the table above is not entirely correct. The key is depending on how the manufacturer designs the board. Please pay attention. This is basic knowledge to understand how your motherboard works. It is better to refer to any source, especially your motherboard manufacturer, for a better understanding</div>_
 
 **Step 2**<div align="justify">Manually edit config.plist with **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**.</div>
 
