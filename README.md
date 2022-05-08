@@ -152,15 +152,36 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 I would like to **thanks** all folks in Hackintosh Community especially:
 
-- [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) 😍 a great guide
-- [corpNewt](https://github.com/corpnewt) 😁 developing [ProperTree](https://github.com/corpnewt/ProperTree) 
-- [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) 😉 an official [Facebook](https://www.facebook.com) community for Hackintosh
-- [r/Hackintosh](https://www.reddit.com/r/hackintosh/) 😘 my favourite [reddit](https://www.reddit.com) Hackintosh discussion platform
-- [ic005k](https://github.com/ic005k) 😗 develop [Xplist](https://github.com/ic005k/Xplist)
+**[Dortania](https://dortania.github.io/OpenCore-Install-Guide/)** 
+> [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) MacOS Install Guide via OpenCore Boot-loader
 
 </br>
 
-## FOLLOW ME
+**[corpNewt](https://github.com/corpnewt)** 
+> [USBmap](https://github.com/corpnewt/USBMap) MacOS USB Mapping Tool 
+>> [ProperTree](https://github.com/corpnewt/ProperTree) Cross Platform Plist Editor
 
-- [reddit](https://www.reddit.com) ⭐ [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
+</br>
+
+**[Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/)**
+> [Facebook](https://www.facebook.com) An Official Malaysia Hackintosh Community
+
+</br>
+
+**[r/Hackintosh](https://www.reddit.com/r/hackintosh/)** 
+> [reddit](https://www.reddit.com) The Hackintosh Discussion Platform 
+
+</br>
+
+**[ic005k](https://github.com/ic005k)**
+> [Xiasl](https://github.com/ic005k/Xiasl) Cross Platform ACPI Compiler 
+>> [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) Cross Platform OpenCore OCAuxiliary Tool 
+>>> [Xplist](https://github.com/ic005k/Xplist) Cross Platform Plist Editor 
+
+</br>
+
+# FIND ME
+
+**[reddit](https://www.reddit.com)**
+> [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
 
