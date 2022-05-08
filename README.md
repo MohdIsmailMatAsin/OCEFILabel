@@ -192,7 +192,7 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 >>> [Xplist](https://github.com/ic005k/Xplist) Cross Platform Plist Editor 
 
 **[Eassos Ltd](https://www.diskgenius.com)**
-> [DiskGenius](https://www.diskgenius.com/dyna_download/?software=DGEngSetup5431342.exe)
+> [DiskGenius](https://www.diskgenius.com/dyna_download/?software=DGEngSetup5431342.exe) All-in-one solution for IT professionals, use it and you will love it!
 
 </br>
 
