@@ -35,7 +35,9 @@
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
-**Step 6**<div align="justify">**Reboot** PC</div>
+**Step 6**<div align="justify">**Reboot** back to MacOS.</div>
+
+**Step 7**<div align="justify">**Arch** EFI partition now visible on **OpenCore** boot menu.</div>
 
 </br>
 
