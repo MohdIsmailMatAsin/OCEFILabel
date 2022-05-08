@@ -11,9 +11,9 @@
 
 | **MANUFACTURER** | **BIOS KEY** | **MANUFACTURER** | **BIOS KEY** |
 | ---------------- | ------------ | ---------------- | ------------ |
-| ASUS             | F8           | Intel            | F10          |
-| Gigabyte         | F12          | Asrock           | F11          |
-| MSI              | F11          | EVGA             | F7           |
+| ASUS             | F8           | Asrock           | F11          |
+| EVGA             | F7           | Gigabyte         | F12          |
+| Intel            | F10          | MSI              | F11          |
 > > _**Remark:**<div align="justify">BIOS key in the table above is not entirely correct. The key is depending on how the manufacturer designs the board. Please pay attention. This is basic knowledge to understand how your motherboard works. It is better to refer to any source, especially your motherboard manufacturer, for a better understanding</div>_
 
 **Step 2**<div align="justify">Manually edit config.plist with **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**.</div>
@@ -181,8 +181,8 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 
 </br>
 
-**[reddit](https://www.reddit.com)** 
-> [r/Hackintosh](https://www.reddit.com/r/hackintosh/) Hackintosh Discussion Platform 
+**[r/Hackintosh](https://www.reddit.com/r/hackintosh/)**
+> [reddit](https://www.reddit.com) Hackintosh Discussion Platform 
 
 </br>
 
@@ -200,4 +200,3 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 
 **[reddit](https://www.reddit.com)**
 > [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
-
