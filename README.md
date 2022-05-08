@@ -18,23 +18,30 @@
 
 **Step 2**<div align="justify">Manually edit config.plist with **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**.</div>
 
-**Step 3**<div align="justify">In config.plist, look for **Misc** > **Security** > **ScanPolicy**</div>
+**Step 3**<div align="justify">In config.plist, look for</div>
+`Misc`
+> `Security`
+>> `ScanPolicy`
 
-**Step 4**<div align="justify">Change the value of **ScanPolicy** to **2690819** or enable **OC_SCAN_ALLOW_FS_ESP**. Save the config.plist and reboot</div>
+**Step 4**<div align="justify">Change the value of</div>
+`ScanPolicy`
+> `2690819` 
+  
+<div align="justify">or enable `OC_SCAN_ALLOW_FS_ESP`. Save the **config.plist** and **reboot**</div>
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
-**Step 5**<div align="justify">Use Linux's built-in partition manager such as **GParted** or **KDE Partition Manager** to find Linux EFI. `/dev/nvme1np1`will be used as an example. Rename the Linux EFI partition, which is labelled as **NO NAME**, to whatever name you want, for example: **Arch**</div>
+**Step 5**<div align="justify">Use Linux's built-in partition manager such as **GParted** or **KDE Partition Manager** to find Linux EFI. `/dev/nvme1np1` will be used as an example. **Rename** the Linux EFI partition, which is labelled as **NO NAME**, to whatever name you want, for example: **Arch**</div>
 
 ![153619493c30aa29b4acf4994ae441a96400ebb80](https://user-images.githubusercontent.com/72515939/153631618-711a7791-ac0e-46af-8bf7-52aeb198498f.png)
 
-**Step 6**<div align="justify">Reboot PC</div>
+**Step 6**<div align="justify">**Reboot** PC</div>
 
 </br>
 
 ## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-**Step 1**<div align="justify">As in **Method 1**, use the terminal command `sudo fdisk-l` to locate the Linux EFI partition. For example, `/dev/nvme1np1`</div>
+**Step 1**<div align="justify">As in **Method 1**, use the terminal command `sudo fdisk-l` to locate the Linux EFI partition. As example, `/dev/nvme1np1`</div>
 
 > Output:
 
@@ -125,7 +132,11 @@ Device     Boot Start       End   Sectors  Size Id Type
 ![AUX102](https://user-images.githubusercontent.com/72515939/167094347-c4edf9c6-1e1b-4e1f-9132-c200e8675adf.gif)
 
 
-**Step 4**<div align="justify">Edit **config.plist**, change the value of **ScanPolicy** to **2690819** by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**</div>
+**Step 4**<div align="justify">Edit **config.plist**, change the value of</div>
+`ScanPolicy`
+> `2690819` 
+
+<div align="justify">by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**</div>
 
 **Step 5**<div align="justify">After editing, save **config.plist**. **Move/Drag** back edited copy from Desktop to EFI partition</div>
 
@@ -144,7 +155,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 <p align="center"><img width="276" alt="Screenshot 2022-04-12 231907" src="https://user-images.githubusercontent.com/72515939/162996386-5ef4d51d-af0b-4d33-844c-c8538c55e2a7.png"></p>
 
-**Step 7**<div align="justify">Close the application, and reboot. **Arch** EFI partition now visible on OpenCore boot menu.</div>
+**Step 7**<div align="justify">**Close** the application, and **reboot**. **Arch** EFI partition now visible on **OpenCore** boot menu.</div>
 
 </br>
 
@@ -177,6 +188,9 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 > [Xiasl](https://github.com/ic005k/Xiasl) Cross Platform ACPI Compiler 
 >> [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) Cross Platform OpenCore OCAuxiliary Tool 
 >>> [Xplist](https://github.com/ic005k/Xplist) Cross Platform Plist Editor 
+
+**[Eassos Ltd](https://www.diskgenius.com)**
+> [DiskGenius](https://www.diskgenius.com/dyna_download/?software=DGEngSetup5431342.exe)
 
 </br>
 
