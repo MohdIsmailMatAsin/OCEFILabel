@@ -1,7 +1,8 @@
-# Hackintosh: An Alternative Linux EFI Labeling 
+# Hackintosh: An Alternative Linux EFI Labeling
 
-> _**Warning:**<div align="justify">This is an alternative method which recommends **Linux Distro** is already installed. Exact **EFI** partition will be renamed. Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** is recommended. This guide are not responsible if any issues occur. Storage is case sensitive, use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** support method if you are not confident trough this process_</div>
-> > _**Reminder:**<div align="justify"> This method don't require and depends on **[OpenLinuxBoot](https://github.com/dortania/OpenCore-Multiboot/blob/master/oc/Linux.md)**. Please read apropriately_</div>
+> _**Warning:**<div align="justify">This is an alternative method which recommends **Linux Distro** is already installed. Exact **EFI** partition will be renamed. Use this method with precaution. Manual config.plist editing via **[ProperTree](https://github.com/corpnewt/ProperTree)** is recommended. This guide are not responsible if any issues occur. Storage is case sensitive, use the **[official](https://dortania-github-io.thrrip.space/OpenCore-Install-Guide/)** support method if you are not confident trough this process</div>_
+>
+> > _**Reminder:**<div align="justify">This method don't require and depends on **[OpenLinuxBoot](https://github.com/dortania/OpenCore-Multiboot/blob/master/oc/Linux.md)**. Please read apropriately</div>_
 
 </br>
 
@@ -14,19 +15,23 @@
 | ASUS             | F8           | Asrock           | F11          |
 | EVGA             | F7           | Gigabyte         | F12          |
 | Intel            | F10          | MSI              | F11          |
+
 > > _**Remark:**<div align="justify">BIOS key in the table above is not entirely correct. The key is depending on how the manufacturer designs the board. Please pay attention. This is basic knowledge to understand how your motherboard works. It is better to refer to any source, especially your motherboard manufacturer, for a better understanding</div>_
 
 **Step 2**<div align="justify">Manually edit config.plist with **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**.</div>
 
 **Step 3**<div align="justify">In config.plist, look for</div>
 `Misc`
+
 > `Security`
->> `ScanPolicy`
+>
+> > `ScanPolicy`
 
 **Step 4**<div align="justify">Change the value of</div>
 `ScanPolicy`
-> `2690819` 
-  
+
+> `2690819`
+
 <div align="justify">or enable `OC_SCAN_ALLOW_FS_ESP`. Save the **config.plist** and **reboot**</div>
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
@@ -49,7 +54,7 @@
 
 ```zsh
 Disk /dev/nvme1n1: 465.76 GiB, 500107862016 bytes, 976773168 sectors
-Disk model: KINGSTON SA2000M8500G                   
+Disk model: KINGSTON SA2000M8500G
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -57,13 +62,13 @@ Disklabel type: gpt
 Disk identifier: 945B20C6-EB46-234C-A4DC-A70A2985D995
 
 Device             Start       End   Sectors   Size Type
-/dev/nvme1n1p1      4096    618495    614400   300M EFI System       
+/dev/nvme1n1p1      4096    618495    614400   300M EFI System
 /dev/nvme1n1p2    618496 905040661 904422166 431.3G Linux filesystem
 /dev/nvme1n1p3 905040662 976768064  71727403  34.2G Linux swap
 
 
 Disk /dev/nvme0n1: 465.76 GiB, 500107862016 bytes, 976773168 sectors
-Disk model: KINGSTON SA2000M8500G                   
+Disk model: KINGSTON SA2000M8500G
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -71,7 +76,7 @@ Disklabel type: gpt
 Disk identifier: 4C938ED0-0EBB-41B1-A33A-6645E6CAAD62
 
 Device          Start       End   Sectors   Size Type
-/dev/nvme0n1p1     40    409639    409600   200M EFI System          
+/dev/nvme0n1p1     40    409639    409600   200M EFI System
 /dev/nvme0n1p2 409640 976773127 976363488 465.6G Apple APFS
 
 
@@ -133,10 +138,10 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 ![AUX102](https://user-images.githubusercontent.com/72515939/167094347-c4edf9c6-1e1b-4e1f-9132-c200e8675adf.gif)
 
-
 **Step 4**<div align="justify">Edit **config.plist**, change the value of</div>
 `ScanPolicy`
-> `2690819` 
+
+> `2690819`
 
 <div align="justify">by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**</div>
 
@@ -145,7 +150,6 @@ Device     Boot Start       End   Sectors  Size Id Type
 > 5.1 **Move/Drag** the **EFI**
 
 ![AUX103](https://user-images.githubusercontent.com/72515939/167094354-c37ed351-2ff0-4f90-928d-44e9d6a1fb56.gif)
-
 
 **Step 6**<div align="justify">Return to **[DiskGenius](https://www.diskgenius.com/)**, choose Linux EFI, then right-click and choose **Select Volume Name**. Rename Normal Label : **NO NAME** to **Arch**</div>
 
@@ -165,33 +169,42 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 I would like to **thanks** all folks in Hackintosh Community especially:
 
-**[Dortania](https://dortania.github.io/OpenCore-Install-Guide/)** 
+**[Dortania](https://dortania.github.io/OpenCore-Install-Guide/)**
+
 > [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) MacOS Install Guide via OpenCore Boot-loader
 
 </br>
 
-**[corpNewt](https://github.com/corpnewt)** 
-> [USBmap](https://github.com/corpnewt/USBMap) MacOS USB Mapping Tool 
->> [ProperTree](https://github.com/corpnewt/ProperTree) Cross Platform Plist Editor
+**[corpNewt](https://github.com/corpnewt)**
+
+> [USBmap](https://github.com/corpnewt/USBMap) MacOS USB Mapping Tool
+>
+> > [ProperTree](https://github.com/corpnewt/ProperTree) Cross Platform Plist Editor
 
 </br>
 
 **[Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/)**
+
 > [Facebook](https://www.facebook.com) An Official Malaysia Hackintosh Community
 
 </br>
 
 **[r/Hackintosh](https://www.reddit.com/r/hackintosh/)**
-> [reddit](https://www.reddit.com) Hackintosh Discussion Platform 
+
+> [reddit](https://www.reddit.com) Hackintosh Discussion Platform
 
 </br>
 
 **[ic005k](https://github.com/ic005k)**
-> [Xiasl](https://github.com/ic005k/Xiasl) Cross Platform ACPI Compiler 
->> [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) Cross Platform OpenCore OCAuxiliary Tool 
->>> [Xplist](https://github.com/ic005k/Xplist) Cross Platform Plist Editor 
+
+> [Xiasl](https://github.com/ic005k/Xiasl) Cross Platform ACPI Compiler
+>
+> > [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) Cross Platform OpenCore OCAuxiliary Tool
+> >
+> > > [Xplist](https://github.com/ic005k/Xplist) Cross Platform Plist Editor
 
 **[Eassos Ltd](https://www.diskgenius.com)**
+
 > [DiskGenius](https://www.diskgenius.com/dyna_download/?software=DGEngSetup5431342.exe) All-in-one solution for IT professionals, use it and you will love it!
 
 </br>
@@ -199,4 +212,5 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 # FIND ME
 
 **[reddit](https://www.reddit.com)**
+
 > [u/mohdismailmatasin](https://www.reddit.com/user/mohdismailmatasin)
