@@ -32,7 +32,7 @@
 
 > `2690819`
 
-<div align="justify">or enable `OC_SCAN_ALLOW_FS_ESP`. Save the **config.plist** and **reboot**</div>
+or enable `OC_SCAN_ALLOW_FS_ESP`. Save the **config.plist** and **reboot**.
 
 ![via Linux EFI Rename](https://user-images.githubusercontent.com/72515939/153618855-3c59d86a-8c92-450b-bd15-33c8ef2a3566.png)
 
@@ -143,7 +143,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 
 > `2690819`
 
-<div align="justify">by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**</div>
+by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https://github.com/corpnewt/ProperTree)**.
 
 **Step 5**<div align="justify">After editing, save **config.plist**. **Move/Drag** back edited copy from Desktop to EFI partition</div>
 
