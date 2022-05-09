@@ -170,33 +170,27 @@ by using **[Xplist](https://github.com/ic005k/Xplist)** or **[ProperTree](https:
 I would like to **thanks** all folks in Hackintosh Community especially:
 
 **[Dortania](https://dortania.github.io/OpenCore-Install-Guide/)**
-
 > [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) MacOS Install Guide via OpenCore Boot-loader
 
 </br>
 
 **[corpNewt](https://github.com/corpnewt)**
-
 > [USBmap](https://github.com/corpnewt/USBMap) MacOS USB Mapping Tool
->
 > > [ProperTree](https://github.com/corpnewt/ProperTree) Cross Platform Plist Editor
 
 </br>
 
-**[Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/)**
-
-> [Facebook](https://www.facebook.com) An Official Malaysia Hackintosh Community
+**[Facebook](https://www.facebook.com)**
+> [Hackintosh Malaysia](https://www.facebook.com/groups/HackintoshMalaysia/about/) An Official Malaysia Hackintosh Community
 
 </br>
 
 **[reddit](https://www.reddit.com)**
-
 > [r/Hackintosh](https://www.reddit.com/r/hackintosh/) Hackintosh Discussion Platform
 
 </br>
 
 **[ic005k](https://github.com/ic005k)**
-
 > [Xiasl](https://github.com/ic005k/Xiasl) Cross Platform ACPI Compiler
 >
 > > [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) Cross Platform OpenCore OCAuxiliary Tool
@@ -204,7 +198,6 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 > > > [Xplist](https://github.com/ic005k/Xplist) Cross Platform Plist Editor
 
 **[Eassos Ltd](https://www.diskgenius.com)**
-
 > [DiskGenius](https://www.diskgenius.com/dyna_download/?software=DGEngSetup5431342.exe) All-in-one solution for IT professionals, use it and you will love it!
 
 </br>
