@@ -189,9 +189,9 @@ I would like to **thanks** all folks in Hackintosh Community especially:
 
 </br>
 
-**[r/Hackintosh](https://www.reddit.com/r/hackintosh/)**
+**[reddit](https://www.reddit.com)**
 
-> [reddit](https://www.reddit.com) Hackintosh Discussion Platform
+> [r/Hackintosh](https://www.reddit.com/r/hackintosh/) Hackintosh Discussion Platform
 
 </br>
 
