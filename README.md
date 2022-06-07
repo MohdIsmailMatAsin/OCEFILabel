@@ -116,7 +116,7 @@ Device     Boot Start       End   Sectors  Size Id Type
 /dev/sdc1        2048 312496127 312494080  149G af HFS / HFS+
 ```
 
-**Step 2**<div align="justify">Type `sudo` to get root access. Use the `fatlabel` command to label the Linux EFI partition. For example, `sudo fatlabel/dev/nvme1np1 Arch`</div>
+**Step 2**<div align="justify">Type `sudo` to get root access. Use the `fatlabel` command to label the Linux EFI partition. For example, `sudo fatlabel /dev/nvme1np1 Arch`</div>
 
 **Step 3**<div align="justify">Press Enter or Return. Then, reboot and boot back to OpenCore. Arch EFI Partition is now visible in the OpenCore boot menu.</div>
 
