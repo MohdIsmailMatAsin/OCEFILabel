@@ -48,7 +48,7 @@ or enable `OC_SCAN_ALLOW_FS_ESP`. Save the **config.plist** and **reboot**.
 
 ## Method 2: Linux Terminal - Using [fdisk](https://github.com/FDOS/fdisk)
 
-**Step 1**<div align="justify">As in **Method 1**, use the terminal command `sudo fdisk-l` to locate the Linux EFI partition. As example, `/dev/nvme1np1`</div>
+**Step 1**<div align="justify">As in **Method 1**, use the terminal command `sudo fdisk -l` to locate the Linux EFI partition. As example, `/dev/nvme1np1`</div>
 
 > Output:
 
